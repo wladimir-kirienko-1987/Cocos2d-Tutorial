@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
 #include "GraphicsScene.h"
+#include "TouchScene.h"
 
 USING_NS_CC;
 
@@ -19,7 +20,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
         director->setOpenGLView(glview);
     }
 
-    auto scene = GraphicsScene::createScene();
+    auto scene = TouchScene::createScene();
     director->runWithScene(scene);
 
     return true;
